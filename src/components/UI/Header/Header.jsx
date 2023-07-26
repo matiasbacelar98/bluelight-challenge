@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Show from '../../Show';
 import Logo from '../Logo';
-import { HamburguerBtn } from '../Buttons';
+import { Btn, HamburguerBtn } from '../Buttons';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -14,6 +14,10 @@ export default function Header() {
   return (
     <header className={`${styles['header']} container`}>
       <Logo />
+
+      <div className={styles['btn-container']}>
+        <Btn>Request invite</Btn>
+      </div>
 
       {/* Mobile */}
       <HamburguerBtn isOpen={isOpen} toggle={handleOpen} />

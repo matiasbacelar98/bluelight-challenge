@@ -7,8 +7,16 @@
   position: relative;
 }
 
+.btn-container {
+  display: none;
+}
+
 @media (min-width: 48em /* 768px */) {
   .header {
     padding: 1.5rem 0;
+  }
+
+  .btn-container {
+    display: block;
   }
 }

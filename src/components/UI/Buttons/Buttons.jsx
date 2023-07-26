@@ -3,6 +3,17 @@ import closeIcon from '../../../assets/svg/icon-close.svg';
 import hamburguerIcon from '../../../assets/svg/icon-hamburger.svg';
 import styles from './Buttons.module.css';
 
+export function Btn({ children }) {
+  return (
+    <button
+      type="button"
+      className={`${styles['btn-reset']} ${styles['btn']} white text-regular text-md`}
+    >
+      {children}
+    </button>
+  );
+}
+
 export function HamburguerBtn({ isOpen, toggle }) {
   return (
     <button
