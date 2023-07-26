@@ -26,3 +26,16 @@
 .header-link:hover::after {
   opacity: 1;
 }
+
+/* Footer Links */
+.footer-link {
+  transition: color 200ms ease;
+}
+.footer-link:hover {
+  color: var(--clr-primary-green-hover);
+}
+
+.footer-link-icon {
+  display: grid;
+  place-content: center;
+}

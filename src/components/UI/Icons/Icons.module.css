@@ -1,0 +1,8 @@
+.footer-icon path {
+  fill: var(--clr-white);
+  transition: fill 200ms ease;
+}
+
+.footer-icon:hover path {
+  fill: var(--clr-primary-green-hover);
+}

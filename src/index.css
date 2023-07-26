@@ -6,6 +6,7 @@
   --clr-primary-green: hsl(136, 65%, 51%);
   --clr-primary-blue: hsl(233, 26%, 24%);
   --clr-primary-cyan: hsl(192, 70%, 51%);
+  --clr-primary-green-hover: hsl(153, 62%, 49%);
 
   --clr-neutral-dark: hsl(233, 8%, 62%);
   --clr-neutral-medium: hsl(220, 16%, 96%);
@@ -211,12 +212,24 @@ select {
 
 /* Others */
 .container {
+  width: 100%;
   max-width: 90%;
   margin-inline: auto;
 }
 
 .flow * + * {
   margin-top: var(--flow-spacer, 1rem);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.layout main {
+  flex-grow: 2;
 }
 
 @media (min-width: 48em /* 768px */) {

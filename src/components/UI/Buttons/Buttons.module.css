@@ -12,6 +12,7 @@
 .btn {
   display: inline-block;
   width: 100%;
+  max-width: max-content;
   height: 3rem;
   padding: 0 2.5rem;
   background-image: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-primary-green));

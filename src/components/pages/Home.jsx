@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Head from '../Head';
 
 import Header from '../UI/Header';
+import Footer from '../UI/Footer';
 
 export default function Home() {
   return (
@@ -11,8 +12,11 @@ export default function Home() {
         description="Easebank is the next generation digital banking. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more."
       />
 
-      <Header />
-      <main>Home page</main>
+      <div className="layout">
+        <Header />
+        <main>Home page</main>
+        <Footer />
+      </div>
     </Fragment>
   );
 }
