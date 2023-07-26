@@ -1,3 +1,214 @@
+/*------ VARIABLES ------*/
+:root {
+  --font: 'Public Sans', sans-serif;
+
+  /* Colors */
+  --clr-primary-green: hsl(136, 65%, 51%);
+  --clr-primary-blue: hsl(233, 26%, 24%);
+  --clr-primary-cyan: hsl(192, 70%, 51%);
+
+  --clr-neutral-dark: hsl(233, 8%, 62%);
+  --clr-neutral-medium: hsl(220, 16%, 96%);
+  --clr-neutral-light: hsl(0, 0%, 98%);
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Spacing */
+  --sp-1: 0.5rem; /* 8px */
+  --sp-2: 0.75rem; /* 12px */
+  --sp-3: 1rem; /* 16px */
+  --sp-4: 1.25rem; /* 20px */
+  --sp-5: 1.5rem; /* 24px */
+  --sp-6: 1.75rem; /* 28px */
+  --sp-7: 2rem; /* 32px */
+  --sp-8: 2.25rem; /* 36px */
+  --sp-9: 2.5rem; /* 40px */
+  --sp-10: 2.75rem; /* 44px */
+  --sp-11: 3rem; /* 48px */
+
+  /* Typography */
+  --fs-light: 300;
+  --fs-regular: 400;
+  --fs-bold: 700;
+
+  --fs-size-1: clamp(2.5rem, 2.323943661971831rem + 0.7511737089201878vw, 3rem); /* 48px/40px */
+  --fs-size-2: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem); /* 40px/32px */
+  --fs-size-3: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem); /* 32px/24px */
+  --fs-size-4: 1.25rem; /* 20px */
+
+  --fs-body-copy: 1.125rem; /* 18px */
+  --fs-body-copy-medium: 1rem; /* 16px */
+  --fs-body-copy-small: 0.875rem; /* 14px */
+  --fs-caption: 0.75rem; /* 12px */
+}
+
+/*-------- RESET --------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Add theme styles & defaults */
 body {
-  font-family: 'Public Sans', sans-serif;
+  min-height: 100vh;
+  background-color: var(--clr-white);
+  font-size: var(--fs-body-copy);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure,
+blockquote,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Define line-height */
+h1 h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+caption {
+  line-height: 1.5;
+}
+
+/* Remove default list styles */
+ul,
+ol,
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*------ UTILITIES ------*/
+/* Typography */
+.heading-xl {
+  font-size: var(--fs-size-1);
+}
+
+.heading-lg {
+  font-size: var(--fs-size-2);
+}
+
+.heading-md {
+  font-size: var(--fs-size-3);
+}
+
+.heading-sm {
+  font-size: var(--fs-size-4);
+}
+
+.text-lg {
+  font-size: var(--fs-body-copy);
+}
+
+.text-md {
+  font-size: var(--fs-body-copy-medium);
+}
+
+.text-sm {
+  font-size: var(--fs-body-copy-small);
+}
+
+.text-xsm {
+  font-size: var(--fs-caption);
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+/* Colors */
+.primary-green {
+  color: var(--clr-primary-green);
+}
+
+.primary-blue {
+  color: var(--clr-primary-blue);
+}
+
+.primary-cyan {
+  color: var(--clr-primary-cyan);
+}
+
+.neutral-dark {
+  color: var(--clr-neutral-dark);
+}
+
+.neutral-medium {
+  color: var(--clr-neutral-medium);
+}
+
+.neutral-light {
+  color: var(--clr-neutral-light);
+}
+
+.white {
+  color: var(--clr-white);
+}
+
+/* Others */
+.flow * + * {
+  margin-top: var(--flow-spacer, 1rem);
 }
