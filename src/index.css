@@ -60,6 +60,7 @@ body {
   min-height: 100vh;
   background-color: var(--clr-white);
   font-size: var(--fs-body-copy);
+  font-family: var(--font);
 }
 
 /* Remove default margin */
