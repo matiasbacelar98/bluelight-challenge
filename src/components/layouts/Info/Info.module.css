@@ -74,7 +74,8 @@
 
   .content p {
     text-align: left;
-    max-width: 36.25rem;
+    font-size: var(--fs-body-copy);
+    max-width: 40rem; /* 640px */
   }
 }
 

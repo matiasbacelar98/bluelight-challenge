@@ -33,7 +33,8 @@
       }
     ],
     "no-empty-function": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "react": { "version": "18.2" },

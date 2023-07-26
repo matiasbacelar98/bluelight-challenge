@@ -14,19 +14,6 @@
 
   --clr-white: hsl(0, 0%, 100%);
 
-  /* Spacing */
-  --sp-1: 0.5rem; /* 8px */
-  --sp-2: 0.75rem; /* 12px */
-  --sp-3: 1rem; /* 16px */
-  --sp-4: 1.25rem; /* 20px */
-  --sp-5: 1.5rem; /* 24px */
-  --sp-6: 1.75rem; /* 28px */
-  --sp-7: 2rem; /* 32px */
-  --sp-8: 2.25rem; /* 36px */
-  --sp-9: 2.5rem; /* 40px */
-  --sp-10: 2.75rem; /* 44px */
-  --sp-11: 3rem; /* 48px */
-
   /* Typography */
   --fs-light: 300;
   --fs-regular: 400;
@@ -215,10 +202,6 @@ select {
   width: 100%;
   max-width: 90%;
   margin-inline: auto;
-}
-
-.flow * + * {
-  margin-top: var(--flow-spacer, 1rem);
 }
 
 .layout {
