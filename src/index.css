@@ -210,6 +210,17 @@ select {
 }
 
 /* Others */
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
 .flow * + * {
   margin-top: var(--flow-spacer, 1rem);
+}
+
+@media (min-width: 48em /* 768px */) {
+  .container {
+    max-width: 80%;
+  }
 }

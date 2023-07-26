@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+@media (min-width: 48em /* 768px */) {
+  .header {
+    padding: 1.5rem 0;
+  }
+}

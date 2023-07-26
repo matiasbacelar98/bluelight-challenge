@@ -1,0 +1,22 @@
+.btn-reset {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-reset:hover {
+  cursor: pointer;
+}
+
+/* Hamburguer btn */
+.hamburguer-btn {
+  display: grid;
+  place-content: center;
+  height: 1.5rem;
+}
+
+@media (min-width: 48em /* 768px */) {
+  .hamburguer-btn {
+    display: none;
+  }
+}
