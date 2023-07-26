@@ -4,6 +4,9 @@ import Head from '../Head';
 import Header from '../UI/Header';
 import Footer from '../UI/Footer';
 
+import Info from '../layouts/Info';
+import Articles from '../layouts/Articles';
+
 export default function Home() {
   return (
     <Fragment>
@@ -14,7 +17,11 @@ export default function Home() {
 
       <div className="layout">
         <Header />
-        <main>Home page</main>
+        <main>
+          <p>Home section</p>
+          <Info />
+          <Articles />
+        </main>
         <Footer />
       </div>
     </Fragment>
