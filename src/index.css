@@ -221,6 +221,12 @@ select {
 
 @media (min-width: 48em /* 768px */) {
   .container {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 64em /* 1024px */) {
+  .container {
     max-width: 80%;
   }
 }

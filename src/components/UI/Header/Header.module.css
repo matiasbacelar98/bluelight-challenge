@@ -1,22 +1,48 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 1.5rem 0;
-  position: relative;
+  height: 5rem;
 }
 
 .btn-container {
   display: none;
 }
 
+.links-list {
+  display: none;
+}
+
 @media (min-width: 48em /* 768px */) {
   .header {
-    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+  }
+
+  .links-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .links-list > * + * {
+    margin-left: 1rem;
   }
 
   .btn-container {
     display: block;
+  }
+}
+
+@media (min-width: 64em /* 1024px */) {
+  .container {
+    max-width: 80%;
+  }
+
+  .links-list > * + * {
+    margin-left: 2rem;
   }
 }

@@ -1,0 +1,28 @@
+.header-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+  transition: color 200ms ease;
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-image: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-primary-green));
+  transition: all 200ms ease;
+  opacity: 0;
+}
+
+.header-link:hover {
+  color: var(--clr-primary-blue);
+}
+
+.header-link:hover::after {
+  opacity: 1;
+}
