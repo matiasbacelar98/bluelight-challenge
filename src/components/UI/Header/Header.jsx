@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Show from '../../Show';
 
 import Logo from '../Logo';
+import MobileMenu from '../MobileMenu';
 import { HeaderLink } from '../Links/Links';
 import { Btn, HamburguerBtn } from '../Buttons';
 
@@ -12,23 +13,32 @@ export default function Header() {
 
   function handleOpen() {
     setIsOpen(prev => !prev);
+
+    // !This is a hacky solution
+    if (!isOpen) {
+      document.querySelector('body').classList.add('remove-scroll');
+    } else {
+      document.querySelector('body').classList.remove('remove-scroll');
+    }
   }
 
   return (
-    <header className={`${styles['header']} container`}>
-      <Logo />
+    <header className={styles['header-section']}>
+      <div className={`${styles['header']} container`}>
+        <Logo />
 
-      <LinksList />
+        <LinksList />
 
-      <div className={styles['btn-container']}>
-        <Btn>Request invite</Btn>
+        <div className={styles['btn-container']}>
+          <Btn>Request invite</Btn>
+        </div>
+
+        {/* Mobile */}
+        <HamburguerBtn isOpen={isOpen} toggle={handleOpen} />
       </div>
 
-      {/* Mobile */}
-      <HamburguerBtn isOpen={isOpen} toggle={handleOpen} />
-
       <Show when={isOpen} fallback={null}>
-        <aside>Mobile menu</aside>
+        <MobileMenu />
       </Show>
     </header>
   );
