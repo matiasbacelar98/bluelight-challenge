@@ -20,6 +20,7 @@ export function HamburguerBtn({ isOpen, toggle }) {
       type="button"
       onClick={toggle}
       className={`${styles['btn-reset']} ${styles['hamburguer-btn']}`}
+      aria-label={isOpen ? 'Close menu' : 'Open menu'}
     >
       <Show when={!isOpen} fallback={<img src={closeIcon} alt="close icon" />}>
         <img src={hamburguerIcon} alt="close icon" />
