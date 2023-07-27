@@ -49,6 +49,7 @@ body {
   background-color: var(--clr-white);
   font-size: var(--fs-body-copy);
   font-family: var(--font);
+  overflow-x: hidden;
 }
 
 /* Remove default margin */

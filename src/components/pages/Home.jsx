@@ -3,7 +3,9 @@ import Head from '../Head';
 
 import Header from '../UI/Header';
 import Footer from '../UI/Footer';
+import DesktopImg from '../UI/DesktopImg';
 
+import Hero from '../layouts/Hero';
 import Info from '../layouts/Info';
 import Articles from '../layouts/Articles';
 
@@ -18,10 +20,12 @@ export default function Home() {
       <div className="layout">
         <Header />
         <main>
-          <p>Home section</p>
+          <DesktopImg />
+          <Hero />
           <Info />
           <Articles />
         </main>
+
         <Footer />
       </div>
     </Fragment>

@@ -1,0 +1,184 @@
+.hero {
+  min-height: 100vh;
+  padding-bottom: 3.5rem;
+
+  background-image: url('../../../assets/images/image-mockups.png'),
+    url('../../../assets/svg/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-position:
+    center top -120px,
+    center top -65px;
+  background-size: 90%, 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: var(--fs-body-copy-medium);
+  padding-top: 20rem;
+}
+
+.content p {
+  max-width: 25rem;
+}
+
+.content h1 {
+  max-width: 18.75rem;
+}
+
+.content > * + * {
+  margin-top: 2rem;
+}
+
+/* ! I DID THIS FAST, THIS SHOULD BE REFACTORED */
+
+@media (min-width: 25em /* 400px */) {
+  .content {
+    padding-top: 25rem;
+  }
+}
+
+@media (min-width: 28.75em /* 460px */) {
+  .content {
+    padding-top: 28rem;
+  }
+}
+
+@media (min-width: 31.25em /* 500px */) {
+  .hero {
+    background-size:
+      90%,
+      100% 70%;
+  }
+
+  .content {
+    padding-top: 32rem;
+  }
+}
+
+@media (min-width: 34.375em /* 500px */) {
+  .hero {
+    background-size:
+      85%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 37.5em /* 600px */) {
+  .hero {
+    background-size:
+      80%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 39.375em /* 630px */) {
+  .content {
+    padding-top: 35rem;
+  }
+}
+
+@media (min-width: 40.625em /* 650px */) {
+  .hero {
+    background-size:
+      75%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 43.75em /* 700px */) {
+  .hero {
+    background-size:
+      70%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 46.875em /* 750px */) {
+  .hero {
+    background-size:
+      65%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 48em /* 768px */) {
+  .content {
+    font-size: var(--fs-body-copy);
+  }
+}
+
+@media (min-width: 53.125em /* 850px */) {
+  .content {
+    padding-top: 38rem;
+  }
+}
+
+@media (min-width: 56.25em /* 900px */) {
+  .hero {
+    background-size:
+      60%,
+      100% 70%;
+  }
+}
+
+@media (min-width: 61.25em /* 980px */) {
+  .content {
+    padding-top: 40rem;
+  }
+}
+
+@media (min-width: 62.5em /* 1000px */) {
+  .hero {
+    justify-content: flex-start;
+    align-items: center;
+
+    background-size:
+      55%,
+      100% 70%;
+  }
+
+  .content {
+    padding-top: 38rem;
+  }
+}
+
+@media (min-width: 64em /* 1024px */) {
+  .hero {
+    min-height: calc(100vh - 5rem);
+    background-image: url('../../../assets/svg/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top -12.5rem right -37.5rem;
+    background-size: 100%;
+    padding-bottom: 0;
+  }
+
+  .content {
+    align-items: flex-start;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .content p {
+    max-width: 28.125rem;
+  }
+}
+
+@media (min-width: 75em /* 1200px */) {
+  .hero {
+    background-position: top -21.875rem right -37.5rem;
+  }
+}
+
+@media (min-width: 81.25em  /* 1300px */) {
+  .hero {
+    background-position: top -21.875rem right -40.625rem;
+  }
+}
