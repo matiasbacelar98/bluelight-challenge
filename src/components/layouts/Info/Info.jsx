@@ -41,7 +41,7 @@ const infoCards = [
     id: '11edc742-fc81-4c43-beed-fcf9520157a5',
     title: 'Simple Budgeting',
     content:
-      'See exactly where your money goes each month. Receive notifications when you"re close to your hitting limits.',
+      "See exactly where your money goes each month. Receive notifications when you're close to your hitting limits.", // eslint-disable-line
     img: {
       src: iconBudgeting,
       alt: 'icon budgeting',
@@ -51,7 +51,7 @@ const infoCards = [
     id: '6f40848a-c647-48b5-855c-2ae12e3da875',
     title: 'Fast Onboarding',
     content:
-      'We don"t do branches. Open your account in minutes online and start taking control of your finances right away.',
+      "We don't do branches. Open your account in minutes online and start taking control of your finances right away.", // eslint-disable-line
     img: {
       src: iconOnboarding,
       alt: 'icon onboarding',

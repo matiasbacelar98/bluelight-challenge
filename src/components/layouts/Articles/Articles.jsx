@@ -23,7 +23,7 @@ const infoArticles = [
     author: 'Claire Robinson',
     title: 'Receive money in any currency with no fees',
     content:
-      'The world is getting smaller and we"re becoming more mobile. So why should you be forced to only received money in a single...',
+      "The world is getting smaller and we're becoming more mobile. So why should you be forced to only received money in a single...", // eslint-disable-line
     img: {
       src: imageCurrency,
       alt: 'money',
@@ -34,7 +34,7 @@ const infoArticles = [
     author: 'Wilson Hutton',
     title: 'Treat yourself without worrying about money',
     content:
-      'Our simpel budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...',
+      'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...',
     img: {
       src: imageRestaurant,
       alt: 'restaurant',
@@ -45,7 +45,7 @@ const infoArticles = [
     title: 'Take your Easybank card wherever you go',
     author: 'Wilson Hutton',
     content:
-      'We want you to enjoy your travels. This is we dont"t charge any fees on purchases while you"re abroad. We"ll even show you...',
+      "We want you to enjoy your travels. This is we dont't charge any fees on purchases while you're abroad. We'll even show you...", // eslint-disable-line
     img: {
       src: imagePlane,
       alt: 'plane',
@@ -56,7 +56,7 @@ const infoArticles = [
     author: 'Claire Robinson',
     title: 'Our invite-only Beta accounts are now live!',
     content:
-      'After a lot of hard work by the whole team, we"re excited to launch our closed beta. It"s ease to request an invite through the site...',
+      "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's ease to request an invite through the site...", // eslint-disable-line
     img: {
       src: imageConfetti,
       alt: 'confetti',
