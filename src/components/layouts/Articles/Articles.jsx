@@ -45,7 +45,7 @@ const infoArticles = [
     title: 'Take your Easybank card wherever you go',
     author: 'Wilson Hutton',
     content:
-      "We want you to enjoy your travels. This is we dont't charge any fees on purchases while you're abroad. We'll even show you...", // eslint-disable-line
+      "We want you to enjoy your travels. This is why we dont't charge any fees on purchases while you're abroad. We'll even show you...", // eslint-disable-line
     img: {
       src: imagePlane,
       alt: 'plane',
